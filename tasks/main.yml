@@ -4,6 +4,9 @@
 - name: install lzop
   apt: name=lzop
 
+- name: install libssl-dev
+  apt: name=libssl-dev
+
 - name: install wal-e
   pip: name={{ item }}
        executable=pip3
