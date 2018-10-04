@@ -7,6 +7,9 @@
 - name: install libssl-dev
   apt: name=libssl-dev
 
+- name: install libffi-dev
+  apt: name=libffi-dev
+
 - name: install wal-e
   pip: name={{ item }}
        executable=pip3
